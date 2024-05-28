@@ -1,0 +1,336 @@
+
+	body {
+
+		background-image: url("./img/TaeAugust07.jpg");
+
+		font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+		overflow-x: hidden;
+	
+	}
+	
+@keyframes wave {
+    0%,100% {
+        transform: translateY(0)
+      }
+      20% {
+        transform: translateY(-10px)
+      }
+}
+
+.hero,.hero1,.hero2{
+	animation: wave 5s infinite  ease-in-out;
+}
+
+
+
+	nav .logo{
+		color: #1111c5;
+
+	}
+    .form-control {
+		border-color: #eee;
+        min-height: 41px;
+		box-shadow: none !important;
+	}
+    .form-control:focus {
+		color: #1111c5;
+	}
+    .form-control, .btn {        
+        border-radius: 3px;
+    }
+	.signup-form {
+		width: 500px;
+		margin-left: 50vw ;
+		padding: 30px 0;
+	}
+    .signup-form h2 {
+		color: #333;
+        margin: 0 0 30px 0;
+		display: inline-block;
+		padding: 0 30px 10px 0;
+		color: #1111c5;
+    }
+    .signup-form form {
+		color: #999;
+		border-radius: 3px;
+    	margin-bottom: 15px;
+        background: #fff;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+        padding: 30px;
+		background: rgba( 255, 255, 255, 0.2 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 10.5px );
+-webkit-backdrop-filter: blur( 10.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+z-index: -2;
+    }
+	.signup-form .form-group {
+		margin-bottom: 20px;
+	}
+	.signup-form label {
+		font-weight: normal;
+		font-size: 13px;
+	}
+    .signup-form input[type="checkbox"] {
+		margin-top: 2px;
+	}
+    .signup-form .btn {        
+        font-size: 16px;
+        font-weight: bold;
+		border: none;
+		margin-top: 20px;
+		min-width: 140px;
+		background-color: #1111c5;
+    }
+	.signup-form .btn:hover {
+		background-color: #ffffff;
+        outline: none !important;
+		color: #1111c5;
+		border: 1px solid #1111c5;
+	}
+    .signup-form a {
+		
+		text-decoration: underline;
+	}
+	.signup-form a:hover {
+		text-decoration: none;
+	}
+    .signup-form form a {
+		 color:white;
+		text-decoration: none;
+	}	
+	.signup-form form a:hover {
+		text-decoration: underline;
+	}
+	nav {
+		font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+		color: black;
+		padding: 15px;
+		text-align: center;
+		background: rgb(255, 255, 255);
+box-shadow: 0 8px 32px 0 rgb(255, 255, 255);
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgb(255, 255, 255);
+	}
+
+	nav a {
+		color: rgb(40, 4, 4);
+		text-decoration: none;
+		margin: 0 15px;
+		width: 100%;
+		
+	}
+	
+	.logo a{
+font-size: xx-large;
+	}
+	nav{
+		display: flex;
+		justify-content: space-between;
+	}
+	
+.alert-success{
+	visibility: hidden;
+}	
+.success{
+	visibility:visible;
+}
+.alert-danger{
+	visibility: hidden;
+}	
+.danger{
+	visibility:visible;
+}
+
+.alert-danger,.alert-success{
+	position: absolute;
+	text-align: center;
+	top:5%;
+	width:37%;
+	left:30%;
+	transition: all ease-in-out 2s;
+}
+.btn{
+	margin: auto;
+}
+.text-center a{
+	cursor: pointer;
+	color: #1111c5;
+}
+
+
+#request{
+	
+	margin-left: 45%;
+}
+
+#login-form{
+	margin-top: 10vh;
+}
+
+img{
+	width: 65vw;
+
+	position: absolute;
+	margin-top: -70vh;
+	z-index: -1;
+}
+
+@media only screen and (min-width: 601px){
+#toggle{
+	display: none !important;
+}
+
+}
+
+
+
+@media only screen and (max-width: 600px){
+       
+    /* #toggle{
+		display: inline;
+	}  */
+	.option{
+		background-color: #1111c5;
+		flex-direction: column;position: absolute;
+		
+		height: 20vh;
+		width: 90%;
+	   top:0px;
+	   margin: auto;
+	   text-align: center;
+	  margin-top: 50px;
+	   align-items: center;
+	   justify-content: space-around;
+	 color: #ffffff;
+	 background: rgba(250, 250, 250, 0.91);
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+border-radius: 10px;
+border-bottom: 5px solid #1111c5;
+
+z-index: 888;
+
+	   display: none;
+	  
+	  
+	}
+	.signup-form{
+		width: 90%;
+		z-index: -2;
+		
+		margin: auto;
+		margin-top: 200px;
+	}
+	
+	.option a{
+		align-items: center;
+		color:#0000fb;
+		margin-top: 20px;
+		margin-left: 0%;
+	   
+	
+		
+		display: flex;
+		flex-direction: column;
+		
+	
+	
+
+	}
+	
+   .active{
+		color: #ffffff;
+		border-radius: 0 0px 10px 10px;
+
+	transition: all ease 1s;
+		display: block;
+		
+	}
+.active i{
+	color:#ffffff;
+
+}
+
+
+	i{
+	display: inline;
+	margin-right:5vw ;
+	z-index: 5;
+   }
+   .logo a{
+	font-size: 5vw;
+	margin-left: 3vw;
+   }
+   .hero{
+   
+	flex-direction: column;
+   }
+  .main .hero .left  {
+	width: 100%;
+	overflow: hidden;
+   
+
+   }
+   .main .hero .left h1{
+	font-size: 5vh;
+   }
+   .main .hero .left h3{
+	font-size: 2.6vw;
+	margin-bottom: 2vh;
+	
+   }
+   .main .hero .left button{
+	height: 4vh;
+   }
+   .main .hero .right{
+	width: 100%;
+	overflow: hidden;
+   }
+   .signup-form form .form-group #request{
+	margin-left: 100px;
+}
+#login-form{
+	margin-top: 20vh;
+}
+
+}
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+
+.logo a{
+	font-size: 5vw;
+	margin-left: 3vw;
+   }
+   .hero{
+   
+	flex-direction: column;
+   }
+  .main .hero .left  {
+	width: 100%;
+	overflow: hidden;
+   
+
+   }
+   .main .hero .left h1{
+	font-size: 5vh;
+   }
+   .main .hero .left h3{
+	font-size: 2.6vw;
+	margin-bottom: 2vh;
+	
+   }
+   .main .hero .left button{
+	height: 4vh;
+   }
+   .main .hero .right{
+	width: 100%;
+	overflow: hidden;
+   }
+
+/* Styles */
+}

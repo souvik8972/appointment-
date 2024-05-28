@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="book-appointment">
+            <h1>Book Appointment</h1>
+            <a href="/booked">Booked Appointment</a>
+
+            <div class="appointment-form">
+                <div class="profile-section">
+                    <input type="text" placeholder="Search by Name/Mobile Number" id="search" oninput="searchProfiles()">
+                    <button id="viewProfileBtn">search</button>
+                     <div class="profile-list">
+                        <ul id="profileList">
+                            <!-- <li onclick="selectProfile('akshay jadhav', '9234599800')">akshay jadhav - 9234599800</li>
+                            <li onclick="selectProfile('test dvdsd', '45343')">test dvdsd - 45343</li>
+                            <li onclick="selectProfile('Rajesh mane', '9065894589')">Rajesh mane - 9065894589</li>
+                            <li onclick="selectProfile('Ravi Patil', '7666537279')">Ravi Patil - 7666537279</li>
+                            <li onclick="selectProfile('Raj kale', '8989085678')">Raj kale - 8989085678</li> -->
+                        </ul>
+                    </div>
+                    <div class="profile-details">
+                        <h2>Profile Details</h2>
+                        <img src="css/img/patient-icon-of-male-person-profile-avatar-symbol-vector-21450139.jpg" alt="Profile Picture" id="profilePic">
+                        <p id="profileName">Name: N/A</p>
+                        <p id="profileLocation">Location: N/A</p>
+                        <p id="profileContact">Contact: N/A</p>
+                        <p id="profileEmail">Email Id: N/A</p>
+                    </div>
+                </div>
+                <div class="details-section">
+                    <form id="appointmentForm">
+                        <div class="details">
+                            <h3>Details</h3>
+                            <label for="doctor">Select Doctor *</label>
+                            <select id="doctor" name="doctor" required>
+                                <!-- <option value="Online">Online</option>
+                                <option value="In-Person">In-Person</option> -->
+                                <!-- Options will be populated dynamically -->
+                            </select>
+                            <label for="appointmentChannel">Select Appointment Channel</label>
+                            <select id="appointmentChannel" name="appointmentChannel" required>
+                                <option value="Online">Online</option>
+                                <option value="In-Person">In-Person</option>
+                            </select>
+                            <label for="appointmentTitle">Appointment Title</label>
+                            <input type="text" id="appointmentTitle" name="appointmentTitle" required>
+                        </div>
+                        <div class="appointment-details">
+                            <h3>Appointment Details</h3>
+                            <p>Patient: <span id="selectedProfileName">N/A</span></p>
+                            <p>PID: <span id="patientId" >N/A</span></p>
+                            <label for="walkIn">Walk-In Appointment</label>
+                            <input type="checkbox" id="walkIn" name="walkIn">
+                            <label for="appointmentDate">Date</label>
+                            <input type="date" id="appointmentDate" name="appointmentDate">
+                            <label for="appointmentTime">Time</label>
+                            <input type="time" id="appointmentTime" name="appointmentTime">
+                            <label for="appointmentType">Select Appointment Type</label>
+                            <select id="appointmentType" name="appointmentType">
+                                <!-- Options will be populated dynamically -->
+                                <option value="Online">Online</option>
+                                <option value="In-Person">In-Person</option>
+                            </select>
+                        </div>
+                        <div class="vital-information">
+                            <h3>Vital Information</h3>
+                            <label for="bp">BP</label>
+                            <input type="text" id="bp" name="bp">
+                            <label for="temp">Temp</label>
+                            <input type="text" id="temp" name="temp">
+                            <label for="height">Height</label>
+                            <input type="text" id="height" name="height">
+                            <label for="weight">Weight</label>
+                            <input type="text" id="weight" name="weight">
+                            <label for="spo2">SPO2</label>
+                            <input type="text" id="spo2" name="spo2">
+                            <label for="pulseRate">Pulse Rate</label>
+                            <input type="text" id="pulseRate" name="pulseRate">
+                            <label for="reason">Reason</label>
+                            <input type="text" id="reason" name="reason">
+                            <label for="noteForDoctor">Note For Doctor</label>
+                            <textarea id="noteForDoctor" name="noteForDoctor"></textarea>
+                        </div>
+                        <div class="form-actions">
+                            <button type="reset">Reset</button>
+                            <button type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>

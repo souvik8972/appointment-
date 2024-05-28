@@ -1,0 +1,251 @@
+
+
+.profile-section {
+  /* background-color: aqua; */
+  width: 90%;
+  height: auto;
+  padding: 20px;
+  margin-right: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.appointment-form {
+  display: flex;
+}
+#search {
+  width: 80%;
+  padding: 5px;
+  border-radius: 10px;
+  text-align: center;
+  opacity: 0.8;
+  color: #6a7cf1;
+}
+#viewProfileBtn {
+  padding: 5px;
+  border-radius: 10px;
+  text-align: center;
+  opacity: 0.8;
+  background-color: #6a7cf1;
+  color: #ffffff;
+}
+.profile-list {
+  width: 80%;
+}
+.profile-list {
+    max-height: 50vh;
+    overflow-y: scroll;
+    list-style: decimal;
+    text-align: left;
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+    width: 100%;
+}
+
+.profile-list::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+.profile-list {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+
+#profileList li {
+  color: #7e8ef1;
+  padding: 10px;
+  border-bottom: 0.1px solid #6a7cf12e;
+}
+.profile-details {
+  text-align: center;
+}
+h2 ,h3{
+  width: 100%;
+  text-align: center;
+  background-color: #6a7cf1;
+  color: #ffffff;
+}
+img {
+  width: 40px;
+  border-radius: 50%;
+  margin: -10px 40px;
+}
+.details-section {
+  
+  padding-left: 40px;
+  padding-top: 30px;
+}
+#appointmentForm {
+  display: flex;
+  flex-wrap: wrap;
+height: auto;
+  width: 90%;
+  justify-content: space-between;
+   background-color: #6a7cf139;
+ box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+}
+h3 {
+  text-align: center;
+}
+select {
+  margin: 10px;
+  padding: 5px;
+  border-radius: 20px;
+  min-width: 15vw;
+  max-width: 20vw;
+  text-align: center;
+}
+label {
+  text-align: justify;
+}
+.details {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: 40vh;
+  margin: 10px;
+
+
+  
+  justify-content: center;
+  align-items: center;
+}
+.details input {
+  margin: 10px;
+  padding: 5px;
+  border-radius: 20px;
+  min-width: 15vw;
+  max-width: 20vw;
+  text-align: center;
+}
+
+.appointment-details {
+  width: 50%;
+  margin-left: 10px;
+  
+  display: flex;
+  flex-direction: column;
+  
+ 
+
+  text-align: center;
+
+  align-items: center;
+}
+.appointment-details label {
+  width: 100%;
+  text-align: center;
+}
+.appointment-details h3{
+    width: 100%;
+    
+}
+.appointment-details input {
+  padding-left: 5px;
+  border-radius: 20px;
+
+  min-width: 15vw;
+  max-width: 20vw;
+}
+h1{
+    text-align: center;
+    color: #7e8ef1;
+}
+
+.vital-information {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;  /* Adjust the gap between items as needed */
+    align-items: center;
+}
+
+.vital-information h3 {
+    width: 100%;
+    margin-bottom: 10px;
+}
+.vital-information {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;  /* Adjust the gap between items as needed */
+    align-items: center;
+}
+
+.vital-information h3 {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.vital-information label,
+.vital-information input,
+.vital-information textarea {
+    flex: 1;
+    min-width: 80px;  /* Adjust the minimum width as needed */
+}
+
+.vital-information label {
+    text-align: right;
+    padding-right: 10px;  /* Space between label and input */
+}
+
+.vital-information input,
+.vital-information textarea {
+    /* Space between rows */
+    width: 30px;
+    flex: 6;
+    height: 15px;
+}
+
+.vital-information textarea {
+    resize: vertical;  /* Allow vertical resizing */
+}
+.form-actions {
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 40px;
+    justify-content: flex-end;
+    gap: 10px;  /* Adjust the gap between buttons as needed */
+    margin-top: 20px;  /* Space above the buttons */
+}
+
+.form-actions button {
+margin-left: 50px;
+    padding: 10px 20px;  /* Adjust padding for button size */
+    font-size: 16px;  /* Adjust font size */
+    border: none;  /* Remove default border */
+    border-radius: 5px;  /* Rounded corners */
+    cursor: pointer;  /* Pointer cursor on hover */
+}
+
+.form-actions button[type="reset"] {
+    background-color: #ffffff;  /* Background color for reset button */
+    color: #333;  /* Text color for reset button */
+}
+
+.form-actions button[type="submit"] {
+    background-color:#6a7cf1;  /* Background color for submit button */
+    color: #fff;  /* Text color for submit button */
+}
+
+.form-actions button[type="reset"]:hover {
+    background-color: #e0e0e0;  /* Hover background color for reset button */
+}
+
+.form-actions button[type="submit"]:hover {
+    background-color: #23558c;  /* Hover background color for submit button */
+}
+.form-actions{
+  width: 100%;
+  display: flex;
+
+  justify-content:center;
+}
+a{
+  background-color:#6a7cf1;  /* Background color for submit button */
+    color: #fff;
+    padding: 10px; 
+    border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  position: absolute;
+  margin-top: -3%;
+}
